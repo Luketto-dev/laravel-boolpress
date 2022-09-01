@@ -7,36 +7,3 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-.card-post,
-#posts-container{
-    height: 100%;
-}
-
-  
-  .post__header .post-meta {
-    align-items: center;
-  }
-  
-  /************************************
-   * POST TEXT 
-   ************************************/
-  .post__text {
-    line-height: 1.2;
-  }
-  
-  /************************************
-   * POST IMAGE 
-   ************************************/
-  .post_image {
-    overflow: hidden;
-  }
-  
-  .post_image img {
-    width: 100%;
-    aspect-ratio: 16/9;
-    transition: transform 0.5s;
-  }
-  
-  .post_image:hover img {
-    transform: scale(1.3) rotate(5deg);
-  }

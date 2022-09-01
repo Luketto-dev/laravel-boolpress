@@ -1,26 +1,23 @@
 <template>
     <div>  
         <Navbar></Navbar>
-        <div class="container">
-            <h1>{{message}}</h1>
+        <div class="container pt-2">
+            <router-view></router-view>
         </div>
-        <main class="container py-4">
-            <PostsList></PostsList>
-        </main>
+        
     </div>     
 </template>
 
 <script>
 import Navbar from "./frontend/components/Navbar.vue";
-import PostsList from "./frontend/components/PostsList.vue";
+
 export default {
-    components: { Navbar, PostsList },
+    components: { Navbar, },
     data() {
         return {
             message: "Hello Vuejs"
         };
     },
-    components: { Navbar, PostsList }
 }
 </script>
 

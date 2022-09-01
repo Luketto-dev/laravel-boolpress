@@ -42,5 +42,14 @@ Route::middleware("auth")
 
     //mi crea tutte le rotte crud per i post
     Route::resource("posts", "PostController");
+
+    
 });
 
+//rotta jolly 
+//laravel cerca una rotta se non la trova arriva a questa che gli dice di prendere qualsiasi cosa gli viene passata 
+Route::get('{any?}', function(){
+    return view("welcome");// torniamo sempre la rotta welkome perchè il framawork creano la single page application
+    //ovvero lavorando lato brawser al ricaricamento della pagina ricomincia da zero, e quindi cercano in tutti i modi 
+    //di non farti ricariche la pagina perchè altrimenti perdi il ruolo piu importante del framwork
+})->where("any", ".*"); // espressione regolare * = può contenere qualsiasi cosa l any

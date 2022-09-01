@@ -16,7 +16,7 @@ class PostController extends Controller
         // ciclo sull array dei post
         $post->map(function ($post){
             
-            $post->content = Str::substr($post->content, 0, 375);
+            $post->content = Str::substr($post->content, 0, 475);
             // se cover_img esiste
             if ($post->cover_img) {
                 //url è il dato che abbiamo a db all interno di storage

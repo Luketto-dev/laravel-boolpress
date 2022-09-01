@@ -40267,9 +40267,9 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Luca\boolean\esercitazioni-progetti-laravel\laravel-boolpress-api\resources\js\backend.js */"./resources/js/backend.js");
-__webpack_require__(/*! C:\Users\Luca\boolean\esercitazioni-progetti-laravel\laravel-boolpress-api\resources\sass\backend\backend.scss */"./resources/sass/backend/backend.scss");
-module.exports = __webpack_require__(/*! C:\Users\Luca\boolean\esercitazioni-progetti-laravel\laravel-boolpress-api\resources\sass\frontend\frontend.scss */"./resources/sass/frontend/frontend.scss");
+__webpack_require__(/*! C:\Users\Luca\boolean\esercitazioni-progetti-laravel\laravel-boolpress-finale\resources\js\backend.js */"./resources/js/backend.js");
+__webpack_require__(/*! C:\Users\Luca\boolean\esercitazioni-progetti-laravel\laravel-boolpress-finale\resources\sass\backend\backend.scss */"./resources/sass/backend/backend.scss");
+module.exports = __webpack_require__(/*! C:\Users\Luca\boolean\esercitazioni-progetti-laravel\laravel-boolpress-finale\resources\sass\frontend\frontend.scss */"./resources/sass/frontend/frontend.scss");
 
 
 /***/ })
