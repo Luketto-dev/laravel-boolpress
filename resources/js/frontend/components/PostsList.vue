@@ -22,7 +22,7 @@
                   <p v-html="post.content + '...'"></p>
                 </div>
                 <div class="card_footer">
-                  <a href="" class="btn btn-primary">Vai al post</a>
+                  <router-link class="btn btn-primary" :to="{ name: 'posts.show', params: { post_slug: post.slug } }">vai al post</router-link>
                 </div>
               </div>
               

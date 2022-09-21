@@ -34,4 +34,29 @@ class PostController extends Controller
         
         return response()->json($post);
     }
+
+
+    public function show($slug){
+
+        $post = Post::where("slug", $slug)->first();
+
+        
+            
+            // se cover_img esiste
+            if ($post->cover_img) {
+                //url è il dato che abbiamo a db all interno di storage
+                $post->cover_img = asset("storage/" . $post->cover_img);
+            }
+            else{
+                // altrimenti mettiamo un placeholder
+                $post->cover_img = asset("images/image-placeholder-500x500.jpg");
+            }
+
+            
+    
+            
+        
+
+        return response()->json($post);
+    }
 }
